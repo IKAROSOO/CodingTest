@@ -12,6 +12,6 @@ def solution(s):
         if value == 1:
             value_ary.append(key)
     
-    answer = "".join(sorted(value_ary, key=lambda x: ord(x)))
+    answer = "".join(sorted(value_ary))
 
     return answer

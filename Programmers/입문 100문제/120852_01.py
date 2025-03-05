@@ -1,14 +1,14 @@
 def solution(n):
     answer = []
-    
+
     if is_prime(n):
         answer.append(n)
         return answer
-
-    for i in range(2, int(n**0.5)+1):
-        if n%i == 0 and is_prime(i):
-            answer.append(i)
-            print(i)
+    
+    for num in range(2, n):
+        if n % num == 0:
+            if is_prime(num):
+                answer.append(num)
     
     return answer
 

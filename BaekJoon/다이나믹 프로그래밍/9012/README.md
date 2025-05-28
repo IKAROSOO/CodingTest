@@ -1,4 +1,4 @@
-# 단어 뒤집기
+# 괄호
 
 [문제 링크] : https://www.acmicpc.net/problem/9012
 

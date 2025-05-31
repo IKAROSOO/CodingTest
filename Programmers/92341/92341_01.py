@@ -1,8 +1,8 @@
 def solution(fees, records):
-    record_dict = dict()
-    parkingTime = dict()
-    fee_list = list()
-    carNum_list = list()
+    record_dict = dict()    # 주차 시간 저장
+    parkingTime = dict()    # 입차 기록 저장
+    fee_list = list()       # 요금 정산
+    carNum_list = list()    # 차량 번호 저장
 
     for record in records:
         time, car_num, breakdown = record.split(" ")
@@ -17,7 +17,7 @@ def solution(fees, records):
             parkingTime[car_num] += TimeCalculate(time, record_dict[car_num])
             del record_dict[car_num]
 
-    for car_num, parkedTime in record_dict.items():
+    for car_num, parkedTime in record_dict.items():     # 주차장에 남아있는 차량 조회
         parkingTime[car_num] += TimeCalculate("23:59", parkedTime)
     
     carNum_list.sort()

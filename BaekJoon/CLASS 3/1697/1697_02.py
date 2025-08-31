@@ -28,3 +28,9 @@ visited = [False] * (2*(k+1))
 answer = bfs(n)
 
 print(answer)
+
+'''
+2025_08_31_19:26
+다시 풀어본 것
+해당 문제는 BFS로 푸는 것이 좋다.
+'''

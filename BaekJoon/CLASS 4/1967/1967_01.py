@@ -5,6 +5,7 @@ input = sys.stdin.readline
 
 def bfs(start):
     distance = [-1] * (n+1)
+    distance[start] = 0
 
     queue = deque([(start, 0)])
 
